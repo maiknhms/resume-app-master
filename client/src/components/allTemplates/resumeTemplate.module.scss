@@ -1,0 +1,360 @@
+.winningResumeTemplates {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    @media only screen and (max-width: 900px) {
+        padding: 40px 20px;
+    }
+    .filtersTypeContent {
+        display: flex;
+        justify-content: center;
+        .filtersTypeItem {
+            margin-right: 20px;
+            & svg {
+                font-size: 40px;
+            }
+        }
+    }
+    .winningTemplateSection {
+        padding: 40px 44px;
+        @media only screen and (max-width: 600px) {
+            padding: 40px 0;
+            padding-bottom: 0;
+        }
+        .winningTemplateItem {
+            padding: 32px;
+            background-color: #eff2f9;
+            position: relative;
+            &:hover .templateCardBtn {
+                opacity: 1;
+            }
+            .templatesBadges {
+                text-align: end;
+                .templatesCardBadge {
+                    display: inline-block;
+                    margin-left: 6px;
+                    padding: 2px 4px;
+                    border-radius: 2px;
+                    background-color: #9fa6bb;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    line-height: 1;
+                    letter-spacing: 0.3px;
+                    font-weight: 600;
+                    text-align: end;
+                }
+            }
+        }
+        .templateCardBtn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all 0.5s ease;
+            & Button {
+                text-transform: capitalize;
+                @media only screen and (max-width: 900px) {
+                    font-size: 12px;
+                }
+                @media only screen and (max-width: 600px) {
+                    font-size: 11px;
+                }
+            }
+            @media only screen and (max-width: 900px) {
+                opacity: 1;
+                top: 60%;
+            }
+        }
+        .templateCardName {
+            font-size: 22px;
+            line-height: 28px;
+            font-weight: 600;
+            transition: color 0.2s;
+            padding-top: 10px;
+            @media only screen and (max-width: 900px) {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+        .templateCardCaption {
+            font-size: 16px;
+            line-height: 20px;
+            color: #828ba2;
+            transition: color 0.2s;
+            @media only screen and (max-width: 600px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.blockSection {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 44px;
+    @media only screen and (max-width: 600px) {
+        padding: 0 20px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 34px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        margin-top: 48px;
+        @media only screen and (max-width: 600px) {
+            font-size: 26px !important;
+            line-height: 28px !important;
+        }
+    }
+
+    p {
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+    .tipsPickingResume {
+        ol {
+            padding-left: 40px;
+            padding-bottom: 40px;
+            counter-reset: ol-counter;
+            li {
+                position: relative;
+                list-style: none;
+                margin-bottom: 8px;
+                font-size: 20px;
+                &::before {
+                    counter-increment: ol-counter;
+                    content: counter(ol-counter) ".";
+                    display: block;
+                    position: absolute;
+                    text-align: left;
+                    top: 0;
+                    right: calc(100% + 4px);
+                    min-width: 20px;
+                    color: rgb(17, 112, 205);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .rightSideSection {
+        margin-left: 63px;
+        background-color: #f3f1eb;
+        border-radius: 6px 6px 0 0;
+        position: sticky;
+        top: 96px;
+        display: block;
+        transition: opacity 0.15s ease;
+        max-width: 300px;
+        @media only screen and (max-width: 900px) {
+            display: none;
+        }
+        .rightSideMain {
+            .rightSideImg {
+                span {
+                    width: 250px !important;
+                    height: 210px !important;
+                    display: block !important;
+                    margin: auto !important;
+                }
+            }
+            .rightSideContent {
+                padding: 0 24px;
+                width: 100%;
+                text-align: center;
+            }
+            h2 {
+                font-size: 26px;
+                line-height: 28px;
+                font-weight: 600;
+                margin-bottom: 4px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 18px;
+            }
+            .rightSideBtn {
+                text-align: center;
+                padding: 16px 24px;
+                border-radius: 0 0 6px 6px;
+                background-color: #1e2532;
+                color: #ffffff;
+                font-weight: 600;
+                svg {
+                    fill: #fff;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .blogCvTemplate {
+        max-width: 1120px;
+        padding: 0;
+        margin: 40px auto;
+    }
+
+    p {
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 34px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        margin-top: 48px;
+    }
+    .blogCvLink {
+        font-size: 20px;
+        text-decoration: underline;
+        color: #1170cd;
+    }
+    .blogBottomBanner {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        background-color: #f3f1eb;
+        min-height: 220px;
+        border-radius: 6px 6px 0 0;
+        @media only screen and (max-width: 600px) {
+            display: block;
+            text-align: center;
+        }
+
+        .blogBottomBannerImg span {
+            width: 250px !important;
+            height: 210px !important;
+        }
+        .blogBottomcontent {
+            max-width: 480px;
+            align-self: center;
+            @media only screen and (max-width: 600px) {
+                padding: 10px 24px;
+            }
+            .blogBottomTitle {
+                font-size: 26px;
+                line-height: 28px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+            .blogBottomCaption {
+                font-size: 19px;
+                line-height: 24px;
+            }
+        }
+    }
+    .blogBottomBtn {
+        text-align: center;
+        padding: 16px 24px;
+        border-radius: 0 0 6px 6px;
+        background-color: #1e2532;
+        color: #ffffff;
+        font-weight: 600;
+        svg {
+            fill: #fff;
+            vertical-align: middle;
+        }
+    }
+}
+
+.saveTimeSection {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 44px 100px;
+    background-color: #1a1c6a;
+    color: #ffffff;
+    @media only screen and (max-width: 900px) {
+        padding: 64px 44px 80px;
+    }
+    @media only screen and (max-width: 600px) {
+        padding: 48px 20px 40px;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        flex-shrink: 0;
+        max-width: 352px;
+        margin-right: 64px;
+        @media only screen and (max-width: 900px) {
+            font-size: 38px;
+            line-height: 40px;
+        }
+        @media only screen and (max-width: 600px) {
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
+    p {
+        padding-top: 8px;
+        flex-grow: 1;
+        max-width: 544px;
+        opacity: 0.5;
+    }
+    .saveTimeSlider {
+        .reviews {
+            font-size: 12px;
+            line-height: 14px;
+            margin-left: 8px;
+            opacity: 0.5;
+        }
+        .saveTimeSliderItem {
+            color: #fff;
+            padding: 10px;
+            &:hover {
+                color: #1170cd;
+            }
+
+            .sliderRating {
+                @media only screen and (max-width: 600px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.professionalResumeBuilder {
+    background-color: #eff2f9;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    @media only screen and (max-width: 600px) {
+        padding: 80px 0;
+    }
+    .professionalResumeLeftBuilder {
+        max-width: 40%;
+    }
+    .professionalRightSide {
+        max-width: 490px;
+        margin: auto;
+        padding-top: 70px;
+        @media only screen and (max-width: 900px) {
+            padding-top: 70px;
+        }
+        @media only screen and (max-width: 600px) {
+            padding-top: 50px;
+        }
+        h1 {
+            padding-bottom: 15px;
+            @media only screen and (max-width: 900px) {
+                font-size: 32px;
+                line-height: 34px;
+                margin: auto;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            text-align: center;
+        }
+        .professionalRightBtn {
+            display: flex;
+            button {
+                text-transform: capitalize;
+            }
+            @media only screen and (max-width: 600px) {
+                justify-content: center;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,919 @@
+.App {
+	background-color: #fff;
+}
+.heroSlider {
+	background: linear-gradient(to right, rgb(44, 62, 81) 0%, rgb(0, 82, 130) 100%);
+	opacity: 1;
+	width: 100%;
+	max-height: 590px;
+	height: 549px;
+	.heroImg1 {
+		padding: 50px 50px 0 100px;
+		@media only screen and (max-width: 900px) {
+			padding: 0;
+		}
+	}
+	.leftSideBanner {
+		@media only screen and (max-width: 900px) {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.heroImgTitle {
+			max-width: 380px;
+			font-size: 48px;
+			font-weight: 400;
+			color: #fff;
+			line-height: 115%;
+			padding-top: 25px;
+			@media only screen and (max-width: 900px) {
+				font-size: 25px;
+				font-weight: 400;
+				max-width: 390px;
+				margin: auto;
+			}
+		}
+		.heroImgText {
+			font-size: 22px;
+			line-height: 135%;
+			margin-top: 17px;
+			color: #fff;
+			max-width: 500px;
+			@media only screen and (max-width: 900px) {
+				font-size: 16px;
+				font-weight: 400;
+			}
+			@media only screen and (max-width: 900px) {
+				padding: 0 50px;
+			}
+		}
+		.heroButton {
+			font-size: 18px;
+			padding: 18px 30px 20px;
+			margin-top: 35px;
+			background-color: #ffb500;
+			border-radius: 40px;
+			@media only screen and (max-width: 900px) {
+				display: none;
+			}
+		}
+
+		.arrowImg {
+			position: absolute;
+			left: -30px;
+			@media only screen and (max-width: 900px) {
+				opacity: 0;
+			}
+		}
+		.heroBanner {
+			@media only screen and (max-width: 900px) {
+				max-width: 53%;
+			}
+			.heroImgButton {
+				font-size: 18px;
+				padding: 18px 30px 20px;
+				margin-top: 35px;
+				background-color: #ffb500;
+				border-radius: 40px;
+				@media only screen and (max-width: 2560px) {
+					opacity: 0;
+				}
+				@media only screen and (max-width: 900px) {
+					max-width: 200px;
+					width: 200px;
+					padding: 11px 15px 13px;
+					font-size: 14px;
+					margin-bottom: 15px;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.home_page {
+	min-height: calc(100vh - 65px);
+	padding: 20px;
+	color: #333;
+	h2 {
+		font-size: 2rem;
+		margin: 10px 0;
+		color: teal;
+	}
+	p {
+		color: #777;
+		line-height: 1.5;
+		margin: 10px 0;
+		font-style: italic;
+	}
+	a {
+		color: white;
+		background: crimson;
+		padding: 15px 40px;
+		display: inline-block;
+		border-radius: 3px;
+		margin: 10px 0;
+		letter-spacing: 1.2px;
+	}
+	h3 {
+		color: chocolate;
+		margin-top: 30px;
+	}
+}
+
+.jobSection {
+	padding: 120px 0;
+	background-color: #fff;
+	@media only screen and (max-width: 900px) {
+		padding: 64px 0;
+	}
+	@media only screen and (max-width: 600px) {
+		padding: 48px 0;
+	}
+	.jobWorthy {
+		font-weight: 700;
+		padding: 20px;
+		max-width: 615px;
+		margin: auto;
+		text-align: center;
+		font-size: 38px;
+		line-height: 40px;
+		@media only screen and (max-width: 600px) {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
+	.sideImage {
+		width: 100%;
+		height: 100%;
+	}
+	.rightSide {
+		position: relative;
+		padding: 12px 12px 12px 27px;
+		margin-bottom: 16px;
+		border-radius: 6px;
+		transition: background-color 0.2s ease;
+		cursor: pointer;
+		&:hover {
+			background-color: rgb(239, 242, 249);
+		}
+		&:active {
+			background-color: rgb(239, 242, 249);
+		}
+		.featureBar {
+			position: absolute;
+			top: 8px;
+			bottom: 8px;
+			left: 8px;
+			width: 3px;
+			border-radius: 6px;
+			background-color: #bec4d5;
+			overflow: hidden;
+		}
+		.featureBarProgress {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #1a91f0;
+			transform: scaleY(0);
+			transform-origin: 0 0;
+		}
+		.featureTitle {
+			font-size: 28px;
+			line-height: 30px;
+			font-weight: 600;
+		}
+
+		.featureSubtitle {
+			display: none;
+			overflow: hidden;
+		}
+	}
+
+	.rightSide:hover .featureSubtitle {
+		display: block;
+	}
+	.featureSubtitleContent {
+		padding-top: 8px;
+	}
+}
+
+.makerSection {
+	width: 100%;
+	background-color: rgb(239, 242, 249);
+	padding-top: 120px;
+	@media only screen and (max-width: 900px) {
+		padding-top: 64px;
+	}
+	@media only screen and (max-width: 600px) {
+		padding-top: 48px;
+	}
+	.makerResponsive {
+		@media only screen and (max-width: 900px) {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		.makerSideImage {
+			max-width: 85%;
+			@media only screen and (max-width: 900px) {
+				display: flex;
+				max-width: 70%;
+				margin: auto;
+			}
+			@media only screen and (max-width: 600px) {
+				max-width: 90%;
+			}
+		}
+		.resumerMakerContent {
+			h1 {
+				font-weight: 700;
+				font-size: 46px;
+				line-height: 48px;
+				margin-bottom: 20px;
+				@media only screen and (max-width: 900px) {
+					padding-bottom: 15px;
+					font-size: 38px;
+					line-height: 40px;
+					max-width: 550px;
+					margin: auto;
+					text-align: center;
+				}
+				@media only screen and (max-width: 600px) {
+					font-size: 32px;
+					line-height: 34px;
+				}
+			}
+			.resumerMakerDescription {
+				max-width: 405px;
+
+				@media only screen and (max-width: 900px) {
+					max-width: 480px;
+					margin: auto;
+					text-align: center;
+				}
+			}
+		}
+		.resumerMakerButton {
+			display: flex;
+			margin-top: 24px;
+
+			Button {
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 22px;
+				padding: 14px 24px;
+			}
+			.makerWatchVideo {
+				margin-left: 10px;
+				color: #000;
+
+				@media only screen and (max-width: 600px) {
+					margin-top: 10px;
+					margin-left: 0;
+				}
+				button {
+					@media only screen and (max-width: 600px) {
+						padding: 14px 34px;
+					}
+				}
+			}
+			@media only screen and (max-width: 900px) {
+				justify-content: center;
+			}
+			@media only screen and (max-width: 600px) {
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+
+	.resumerMakerGuide {
+		@media only screen and (max-width: 900px) {
+			display: flex;
+			margin-bottom: 25px;
+			@media only screen and (max-width: 600px) {
+				display: block;
+				text-align: center;
+			}
+		}
+
+		.resumerMakerImg span {
+			@media only screen and (max-width: 900px) {
+				width: 72px !important;
+			}
+		}
+		.resumerMakerText {
+			@media only screen and (max-width: 900px) {
+				margin-left: 10px;
+			}
+		}
+	}
+}
+.readyUseTemplate {
+	.readyUseInnerTemplate {
+		@media only screen and (max-width: 900px) {
+			display: block;
+		}
+	}
+	@media only screen and (max-width: 900px) {
+		text-align: center;
+	}
+	button {
+		@media only screen and (max-width: 900px) {
+			display: none;
+		}
+	}
+	.trustPilotLink {
+		color: #fff;
+		text-decoration: underline;
+	}
+	.arrowSlider {
+		@media only screen and (max-width: 900px) {
+			padding-top: 0;
+		}
+		.arrowIcon {
+			height: 30px;
+			position: absolute;
+			cursor: pointer;
+			top: 60%;
+			left: -5%;
+			fill: #fff;
+			animation: arrowPulse 1.5s ease infinite;
+			:first-child {
+				animation-delay: 0.3s;
+			}
+			@keyframes arrowPulse {
+				0% {
+					bottom: 20px;
+					opacity: 0;
+				}
+				25% {
+					opacity: 0.25;
+				}
+				50% {
+					opacity: 0.5;
+				}
+				75% {
+					opacity: 0.75;
+				}
+				100% {
+					bottom: 0px;
+					opacity: 1;
+				}
+			}
+			@media only screen and (max-width: 900px) {
+				display: none;
+			}
+		}
+	}
+}
+.professionalResumeBuilder {
+	background-color: #eff2f9;
+	padding-top: 80px;
+	padding-bottom: 120px;
+	@media only screen and (max-width: 600px) {
+		padding: 80px 0;
+	}
+	.professionalResumeLeftBuilder {
+		max-width: 40%;
+	}
+	.professionalRightSide {
+		max-width: 490px;
+		margin: auto;
+		padding-top: 70px;
+		@media only screen and (max-width: 900px) {
+			padding-top: 70px;
+		}
+		@media only screen and (max-width: 600px) {
+			padding-top: 50px;
+		}
+		h1 {
+			padding-bottom: 15px;
+			@media only screen and (max-width: 900px) {
+				font-size: 32px;
+				line-height: 34px;
+				margin: auto;
+			}
+		}
+		@media only screen and (max-width: 600px) {
+			text-align: center;
+		}
+		.professionalRightBtn {
+			display: flex;
+			button {
+				text-transform: capitalize;
+			}
+			@media only screen and (max-width: 600px) {
+				justify-content: center;
+				display: block;
+			}
+		}
+	}
+}
+// .provenTemplate {
+//     padding: 120px 0;
+//     @media only screen and (max-width: 900px) {
+//         padding: 64px 0;
+//     }
+//     @media only screen and (max-width: 600px) {
+//         padding: 48px 0;
+//     }
+// }
+// .professionalStory {
+//     padding: 120px 0;
+//     @media only screen and (max-width: 900px) {
+//         padding: 64px 0;
+//     }
+//     @media only screen and (max-width: 600px) {
+//         padding: 48px 0;
+//     }
+//     @media only screen and (max-width: 900px) {
+//         display: flex;
+//         flex-direction: column-reverse;
+//         text-align: center;
+//     }
+//     h1 {
+//         @media only screen and (max-width: 900px) {
+//             font-weight: 700;
+//             font-size: 36px;
+//             line-height: 40px;
+//             margin: auto;
+//             @media only screen and (max-width: 600px) {
+//                 font-size: 30px;
+//                 line-height: 34px;
+//             }
+//         }
+//     }
+//     .secureJob {
+//         @media only screen and (max-width: 600px) {
+//             font-size: 14px;
+//         }
+//     }
+//     p {
+//         @media only screen and (max-width: 900px) {
+//             margin: auto;
+//             padding: 20px 0;
+//             font-size: 18px;
+//         }
+//     }
+//     .dreamJob {
+//         @media only screen and (max-width: 900px) {
+//             max-width: 70%;
+//             margin: auto;
+//         }
+//     }
+// }
+// .letterBuilder {
+//     h1 {
+//         @media only screen and (max-width: 900px) {
+//             font-size: 38px;
+//             line-height: 40px;
+//         }
+//         @media only screen and (max-width: 600px) {
+//             font-size: 30px;
+//             line-height: 34px;
+//         }
+//     }
+//     .letterBuilderBtn {
+//         display: flex;
+//         justify-content: center;
+//         @media only screen and (max-width: 600px) {
+//             display: block;
+//         }
+//         .letterBuilderBtn1 {
+//             margin-right: 10px;
+//             @media only screen and (max-width: 600px) {
+//                 margin-bottom: 10px;
+//                 margin-right: 0;
+//             }
+//             button {
+//                 @media only screen and (max-width: 900px) {
+//                     padding: 14px 67px;
+//                 }
+//             }
+//         }
+//     }
+// }
+.featureDesigned {
+	padding: 120px 0;
+	@media only screen and (max-width: 900px) {
+		padding: 64px 0;
+	}
+	@media only screen and (max-width: 600px) {
+		padding: 48px 20px;
+	}
+	h1 {
+		@media only screen and (max-width: 900px) {
+			font-size: 38px;
+			line-height: 40px;
+			max-width: 550px;
+		}
+		@media only screen and (max-width: 600px) {
+			font-size: 30px;
+			line-height: 34px;
+		}
+	}
+	.featureDesignedItem {
+		display: flex;
+		@media only screen and (max-width: 900px) {
+			display: block;
+			justify-content: center;
+			text-align: center;
+		}
+		.featuresImg {
+			background-image: url(../../../public/images/featuredDesign.svg);
+			background-color: transparent;
+			width: 56px;
+			height: 56px;
+			flex: 0 0 56px;
+			margin-right: 8px;
+			@media only screen and (max-width: 900px) {
+				margin: auto;
+			}
+		}
+	}
+}
+.modernJobMarket {
+	padding: 120px 0;
+	@media only screen and (max-width: 900px) {
+		padding: 64px 0;
+	}
+	@media only screen and (max-width: 600px) {
+		padding: 48px 0;
+	}
+	h1 {
+		@media only screen and (max-width: 900px) {
+			font-size: 38px;
+			line-height: 40px;
+			max-width: 550px;
+			margin: auto;
+			padding: 10px 0;
+		}
+		@media only screen and (max-width: 600px) {
+			font-size: 30px;
+			line-height: 34px;
+		}
+	}
+	.tabsDesign {
+		width: 30%;
+		padding: 16px;
+		border-radius: 6px 6px 0 0;
+		margin: auto;
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 600;
+		align-items: flex-start;
+		color: #828ba2 !important;
+		background-color: #f7f9fc;
+		@media only screen and (max-width: 599.98px) {
+			font-size: 12px;
+			padding: 10px;
+		}
+	}
+	.tabContent {
+		min-height: 300px;
+		background-color: #ffffff;
+		margin: 0 16px;
+		@media only screen and (max-width: 600px) {
+			margin: 0 7px;
+		}
+		.tabsHeading {
+			margin-bottom: 8px;
+			line-height: 28px;
+			font-weight: 600;
+			color: #282b8f;
+		}
+	}
+}
+.effectiveJob {
+	@media only screen and (max-width: 900px) {
+		padding: 0;
+	}
+	h1 {
+		@media only screen and (max-width: 900px) {
+			font-size: 38px;
+			line-height: 40px;
+			max-width: 550px;
+			margin: auto;
+			padding: 10px 0;
+		}
+		@media only screen and (max-width: 600px) {
+			font-size: 30px;
+			line-height: 34px;
+		}
+	}
+	.effectiveJobContent {
+		@media only screen and (max-width: 900px) {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		.effectiveLeftContent {
+			@media only screen and (max-width: 900px) {
+				padding-top: 160px;
+				text-align: center;
+			}
+			@media only screen and (max-width: 600px) {
+				padding-top: 120px;
+				text-align: center;
+			}
+		}
+		.jobInterviewText {
+			@media only screen and (max-width: 900px) {
+				margin: auto;
+				padding-bottom: 15px;
+				max-width: 450px;
+			}
+		}
+		@media only screen and (max-width: 600px) {
+			padding: 30px 10px;
+		}
+	}
+	.jobInterviewBtn {
+		display: flex;
+		@media only screen and (max-width: 900px) {
+			justify-content: center;
+		}
+		@media only screen and (max-width: 600px) {
+			display: block;
+		}
+		.jobInterviewBtn1 {
+			margin-right: 10px;
+			padding: 14px 28px;
+			@media only screen and (max-width: 600px) {
+				margin-bottom: 10px;
+				margin-right: 0;
+			}
+		}
+	}
+}
+.tipsResumeSection {
+	padding: 60px 0 70px;
+	background: #f6f5f0;
+	@media only screen and (max-width: 600px) {
+		padding: 30px 30px 40px;
+	}
+
+	h1 {
+		max-width: 750px;
+		margin: 0 auto 40px;
+		text-align: center;
+		color: #002d6b;
+	}
+	.tipsResumeContent {
+		counter-reset: numb;
+		max-width: 750px;
+		margin: 0 auto;
+		.tipsResumeItems {
+			background-color: #fff;
+			margin-bottom: 30px;
+			padding: 20px 30px 5px 85px;
+			border-radius: 11px;
+			position: relative;
+			@media only screen and (max-width: 600px) {
+				padding: 95px 20px 15px;
+			}
+			h3 {
+				color: #002d6b;
+				@media only screen and (max-width: 600px) {
+					text-align: center;
+					margin-bottom: 10px;
+				}
+			}
+
+			p {
+				font-size: 18px;
+				padding: 15px 0;
+			}
+			&::before {
+				content: counter(numb);
+				counter-increment: numb;
+				position: absolute;
+				left: 20px;
+				top: 20px;
+				width: 45px;
+				height: 45px;
+				background: #efc778;
+				border-radius: 11px 0;
+				font-family: "Nunito";
+				font-weight: 800;
+				font-size: 20px;
+				line-height: 28px;
+				color: #002d6b;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@media only screen and (max-width: 600px) {
+					left: 50%;
+					top: 30px;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+}
+
+.frequentlySection {
+	h1 {
+		@media only screen and (max-width: 900px) {
+			font-size: 38px;
+			line-height: 40px;
+			margin: auto;
+		}
+		@media only screen and (max-width: 600px) {
+			font-size: 30px;
+			line-height: 34px;
+		}
+	}
+	.frequentlyContent {
+		@media only screen and (max-width: 900px) {
+			padding: 80px 32px;
+		}
+		@media only screen and (max-width: 600px) {
+			padding: 48px 20px;
+		}
+	}
+	.accordianContent {
+		.accordianSummary {
+			padding: 0;
+			margin: 5px 0;
+			& :hover {
+				color: #1a91f0;
+			}
+		}
+
+		.moreIcon {
+			color: #1a91f0;
+		}
+		.accordionDetails {
+			max-width: 600px;
+			padding-left: 0;
+			.typographyLink {
+				color: #1a91f0;
+				&:hover {
+					color: #000;
+				}
+			}
+		}
+		.homeFaqNote {
+			margin-top: 24px;
+			color: #828ba2;
+		}
+	}
+}
+.geniusHelpUser {
+	padding-top: 50px;
+	padding-bottom: 40px;
+	background: #fafbfc;
+	h1 {
+		font-weight: 800;
+		font-size: 46px;
+		line-height: 48px;
+		text-align: center;
+		max-width: 870px;
+		margin: 0 auto;
+	}
+	p {
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+		padding-top: 20px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.logoCarousel {
+		overflow: hidden;
+		position: relative;
+		margin: 0;
+		.logoCarouselContent {
+			width: 2104px;
+			display: flex;
+			height: 100%;
+			animation: translateinfinite 40s linear infinite;
+		}
+	}
+}
+// .reviewSection {
+//     @media only screen and (max-width: 900px) {
+//         padding: 80px 32px;
+//     }
+//     @media only screen and (max-width: 600px) {
+//         padding: 60px 0;
+//     }
+
+//     h1 {
+//         @media only screen and (max-width: 900px) {
+//             font-size: 34px;
+//             line-height: 40px;
+//             max-width: 736px;
+//             margin: auto;
+//         }
+//         @media only screen and (max-width: 600px) {
+//             font-size: 24px;
+//             line-height: 30px;
+//         }
+//     }
+//     .reviewContent {
+//         @media only screen and (max-width: 600px) {
+//             display: block;
+//             padding-left: 20px;
+//         }
+//         .reviewLeftContent {
+//             @media only screen and (max-width: 600px) {
+//                 border-radius: 4px;
+//                 background-color: #ffffff;
+//                 padding: 32px;
+//                 margin-bottom: 20px;
+//             }
+//         }
+//     }
+
+//     .sliderSection {
+//         .slideTitle {
+//             font-size: 22px;
+//             line-height: 28px;
+//             text-align: left;
+//             font-weight: 600;
+//             margin-bottom: 4px;
+//             white-space: nowrap;
+//             overflow: hidden;
+//             text-overflow: ellipsis;
+//         }
+//         .slideContent {
+//             max-height: 96px;
+//             text-align: left;
+//             margin-bottom: 32px;
+//             display: -webkit-box;
+//             -webkit-line-clamp: 4;
+//             -webkit-box-orient: vertical;
+//             overflow: hidden;
+//         }
+//         .slideReview {
+//             display: flex;
+//             align-items: center;
+//             position: absolute;
+//             bottom: 0;
+//             font-size: 14px;
+//             line-height: 16px;
+//             color: #656e83;
+//         }
+//         .slick-slider button {
+//             width: 36px;
+//             height: 36px;
+//             background-color: #e7eaf4;
+//             color: #828ba2;
+//             border-radius: 50%;
+//             top: 50%;
+//         }
+//     }
+// }
+// .userWorldWide {
+//     padding: 120px 0;
+//     @media only screen and (max-width: 900px) {
+//         padding: 64px 0;
+//     }
+//     @media only screen and (max-width: 600px) {
+//         padding: 48px 0;
+//     }
+
+//     h1 {
+//         @media only screen and (max-width: 900px) {
+//             font-weight: 700;
+//             font-size: 54px;
+//             line-height: 65px;
+//             max-width: 550px;
+//         }
+//         @media only screen and (max-width: 600px) {
+//             font-size: 32px;
+//             line-height: 40px;
+//         }
+//     }
+//     .amountLine {
+//         background-color: transparent;
+//         color: #1a91f0;
+//         border-bottom: 4px solid #f9ba44;
+//     }
+// }
+
+@keyframes translateinfinite {
+	100% {
+		transform: translateX(-100%);
+	}
+}
+.videoIframe {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio */
+	.iframeVideo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+}

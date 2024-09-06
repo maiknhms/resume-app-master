@@ -1,0 +1,30 @@
+.selectTempSection {
+	.selectTempTopButtons {
+		border: 1px solid #cacaca;
+		border-radius: 18px;
+		padding: 6px 25px;
+		width: 150px;
+	}
+	.selectTempBottomButtons {
+		width: 250px;
+		padding: 12px 25px;
+		border-radius: 30px;
+		border: 1px solid #cacaca;
+		@media screen and (max-width: 900px) {
+			width: 180px;
+			padding: 8px 16px;
+		}
+	}
+	.resumeTemplate {
+		zoom: 0.7;
+		@media only screen and (max-width: 1440px) {
+			zoom: 0.5;
+		}
+		@media only screen and (max-width: 899px) {
+			zoom: 0.38;
+		}
+	}
+}
+.nextButton {
+	color: black;
+}

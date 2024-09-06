@@ -1,0 +1,65 @@
+.navbar {
+	.logo {
+		width: 150px;
+	}
+	.mainMenu {
+		.navItem {
+			.navLink {
+				font-size: 16px;
+				text-transform: unset;
+				color: rgb(30, 44, 63);
+				@media screen and (max-width: 1024px) {
+					font-size: 14px;
+				}
+			}
+
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+			&:hover {
+				color: rgb(16, 82, 155);
+				background-color: transparent;
+			}
+		}
+	}
+	.navbarDivider {
+		height: 25px;
+		align-self: center;
+		margin-right: 20px;
+	}
+	.navMenuRight {
+		.navItem {
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+			.navLink {
+				font-size: 16px;
+				@media screen and (max-width: 1024px) {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+.navbarPopover {
+	p {
+		font-size: 14px;
+		color: #000;
+	}
+	.resumeExamples {
+		.resumeExample {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.drawer {
+	.navItem {
+		@media only screen and (max-width: 900px) {
+			margin-bottom: 10px;
+		}
+		.navLink {
+		}
+	}
+}

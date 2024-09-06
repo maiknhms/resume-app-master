@@ -1,0 +1,14 @@
+#resumeTemplatePreview {
+	zoom: 0.5;
+	@media only screen and (max-width: 899px) {
+		zoom: 0.38;
+	}
+	.name {
+		font-size: 32px;
+		input {
+			font-size: 32px;
+			font-weight: 600;
+			padding: 0;
+		}
+	}
+}

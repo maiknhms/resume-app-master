@@ -1,0 +1,28 @@
+.loginPage {
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+	padding: 40px 40px 120px;
+	min-height: calc(100vh - 65px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	h2 {
+		margin-bottom: 10px;
+	}
+	.social {
+		display: grid;
+		gap: 16px;
+		grid-template-columns: repeat(2, 1fr);
+		.loginBtn {
+			min-width: 150px;
+			padding: 7px 7px 7px 35px;
+			.loginIcon {
+				position: absolute;
+				left: 15px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

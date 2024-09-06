@@ -1,0 +1,33 @@
+.emailSuccess {
+	padding-top: 40px;
+	padding-bottom: 120px;
+	text-align: center;
+	.loginImage {
+		display: flex;
+		margin: 0px auto 32px;
+		max-width: 100%;
+		@media only screen and (max-width: 768px) {
+			display: block;
+		}
+	}
+	.loginTitle {
+		font-size: 47px;
+		line-height: 48px;
+		margin-bottom: 12px;
+		@media only screen and (max-width: 768px) {
+			font-size: 34px;
+			line-height: 42px;
+		}
+	}
+	.loginDescription {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.contactSupport {
+		max-width: 360px;
+		margin: 32px auto 0px;
+		font-size: 14px;
+		line-height: 20px;
+		color: rgb(130, 139, 162);
+	}
+}

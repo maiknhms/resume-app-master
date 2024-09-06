@@ -1,0 +1,96 @@
+.footerSection {
+    padding: 48px 90px;
+    @media only screen and (max-width: 900px) {
+        padding: 48px 30px;
+    }
+    @media only screen and (max-width: 600px) {
+        padding: 48px 30px;
+        display: block;
+    }
+    .linkdin,
+    .pinterest,
+    .instagram,
+    .facebook {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #1e2532;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin: 3px;
+        @media only screen and (max-width: 900px) {
+            width: 45px;
+            height: 45px;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .linkdin:hover {
+        background-color: #0077b5;
+    }
+    .pinterest:hover {
+        background-color: #cd1f28;
+    }
+    .instagram:hover {
+        background-image: linear-gradient(
+            45deg,
+            #f9d86b 0%,
+            #ed634a 50.52%,
+            #ba46a5 100%
+        );
+    }
+    .facebook:hover {
+        background-color: #3b5998;
+    }
+    .youtube {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #1e2532;
+        border-radius: 50%;
+        fill: #fff;
+
+        &:hover {
+            background-color: #fff;
+            svg {
+                fill: #ff3d00;
+            }
+        }
+        @media only screen and (max-width: 900px) {
+            width: 45px;
+            height: 45px;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .footerContent {
+        .footerLinksTitle {
+            font-weight: 500;
+            font-size: 1.25rem;
+            margin-bottom: 24px;
+        }
+        .footerLinksList {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footerLinksItem {
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 8px;
+            &:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+}

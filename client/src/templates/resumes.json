@@ -1,0 +1,16 @@
+[
+	{
+		"id": 1,
+		"path": "/images/resumes/resume-1.png",
+		"title": "Berlin",
+		"description": "Modern resume template with bold, clean formatting.",
+		"category": "simple"
+	},
+	{
+		"id": 2,
+		"path": "/images/resumes/resume-2.png",
+		"title": "IT",
+		"description": "One of the best resume layouts to choose when you wish to showcase your IT expertise.",
+		"category": "creative"
+	}
+]

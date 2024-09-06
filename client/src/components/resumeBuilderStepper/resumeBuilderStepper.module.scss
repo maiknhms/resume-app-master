@@ -1,0 +1,10 @@
+.resumeTemplate {
+	padding: 20px;
+	zoom: 0.7;
+	@media only screen and (max-width: 1440px) {
+		zoom: 0.5;
+	}
+	@media only screen and (max-width: 899px) {
+		zoom: 0.38;
+	}
+}

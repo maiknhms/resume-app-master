@@ -1,0 +1,87 @@
+.leftSideDesign {
+	position: relative;
+	h2 {
+		font-size: 28px;
+		position: relative;
+	}
+	h3 {
+		font-size: 18px;
+		align-self: center;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	h4 {
+		font-size: 16px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	h5 {
+		margin: 5px auto;
+		font-size: 12px;
+		font-weight: 400;
+	}
+	p {
+		font-size: 14px;
+	}
+	.heading {
+		border-bottom: 1px solid #bec4d5;
+		padding-bottom: 15px;
+	}
+	.subHeading {
+		margin: 20px auto 7px;
+	}
+	.subHeadingInner {
+		margin: 15px auto;
+	}
+	// .horizentalLine {
+	//     width: 700px;
+	//     height: 3px;
+	//     border-radius: 6px;
+	//     background-color: #bec4d5;
+	//     overflow: hidden;
+	// }
+	.underLine {
+		width: 45px;
+		height: 2px;
+		border-radius: 6px;
+		background-color: #000;
+		margin-top: 7px;
+	}
+	.skillUnderLine {
+		width: 200px;
+		height: 4px;
+		border-radius: 6px;
+		background-color: #000;
+		margin: 10px 0;
+	}
+	// .verticalLine {
+	//     width: 4px;
+	//     height: 1350px;
+	//     background-color: #bec4d5;
+	//     overflow: hidden;
+	//     top: 140px;
+	//     position: absolute;
+	//     left: 90%;
+	// }
+}
+.rightSection {
+	margin-top: 15px;
+	padding-left: 0 !important;
+	border-left: 2px solid #bec4d5;
+	padding-top: 0 !important;
+	.rightSectionBox {
+		margin: 20px;
+		.rightSectionJobHistory {
+			margin-bottom: 50px;
+		}
+	}
+
+	// .rightSectionBorder {
+	//     border-bottom: 4px solid #bec4d5;
+	// }
+	.rightSideSubHeadingInner {
+		display: flex;
+		justify-content: space-between;
+	}
+}
